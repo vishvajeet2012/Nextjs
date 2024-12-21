@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import { CiShoppingCart } from "react-icons/ci";
 
 import log from "../logo-main.png";
 import { CiLocationOn } from "react-icons/ci";
@@ -38,7 +39,7 @@ export default function Navbar() {
           </div>
         </div>
 
-    <div className="bg-transparent p-1 flex">
+    <div className="bg-transparent p-1 font-bold flex">
         <Image src={dubai} width={20} className="bg-transparent" height={10} alt="dubai" />
         <select className="bg-transparent" >
             <option>En</option>
@@ -46,7 +47,7 @@ export default function Navbar() {
         </select>
 
     </div>
-                <div className="">
+                <div className="font-bold">
                     <p>Hello, sign in</p>
                     <select className="bg-transparent">
                         <option >
@@ -54,6 +55,16 @@ export default function Navbar() {
                         </option>
                     </select>
                 </div>
+                <div>
+                <p>Retrun</p>
+                <p>& order</p>
+                </div>
+
+                <div>
+<CiShoppingCart className="text-2xl"/>
+<p>Cart</p>
+                </div>
+
 
       </nav>
     </header>
