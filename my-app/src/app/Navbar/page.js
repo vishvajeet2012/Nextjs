@@ -1,4 +1,4 @@
-'use client'
+
 import Image from "next/image";
 import { CiShoppingCart } from "react-icons/ci";
 
@@ -6,7 +6,7 @@ import log from "../logo-main.png";
 import { CiLocationOn } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
 import { IconContext } from "react-icons";
-import dubai from "../dubai.png"
+import dubai from "../dubai.png";
 export default function Navbar() {
   return (
     <header>
@@ -39,34 +39,35 @@ export default function Navbar() {
           </div>
         </div>
 
-    <div className="bg-transparent p-1 font-bold flex">
-        <Image src={dubai} width={20} className="bg-transparent" height={10} alt="dubai" />
-        <select className="bg-transparent" >
+        <div className="bg-transparent p-1 font-bold flex">
+          <Image
+            src={dubai}
+            width={20}
+            className="bg-transparent"
+            height={10}
+            alt="dubai"
+          />
+          <select className="bg-transparent">
             <option>En</option>
             <option>hindi</option>
-        </select>
+          </select>
+        </div>
+        <div className="font-bold">
+          <p>Hello, sign in</p>
+          <select className="bg-transparent">
+            <option>Acounts & Lists</option>
+          </select>
+        </div>
+        <div>
+          <p>Retrun</p>
+          <p>& order</p>
+        </div>
 
-    </div>
-                <div className="font-bold">
-                    <p>Hello, sign in</p>
-                    <select className="bg-transparent">
-                        <option >
-                  Acounts & Lists
-                        </option>
-                    </select>
-                </div>
-                <div>
-                <p>Retrun</p>
-                <p>& order</p>
-                </div>
-
-                <div>
-<CiShoppingCart className="text-2xl"/>
-<p>Cart</p>
-                </div>
-
-
+        <div>
+          <CiShoppingCart className="text-2xl" />
+          <p>Cart</p> 
+        </div>
       </nav>
-    </header>
+    </header> ///check
   );
 }
