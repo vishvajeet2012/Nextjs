@@ -31,7 +31,7 @@ export default function Navbar() {
           </select>
           <input
             type="text"
-            className="w-[480px]"
+            className="w-[150px] sm:w-[150px] md:-[200px] lg:w-[480px]"
             placeholder="Search Amazon"
           />
           <div className="bg-orange-300 p-2 flex justify-center items-center">
