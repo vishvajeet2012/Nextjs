@@ -10,7 +10,6 @@ function ServerAction (){
       <form action={sumbitAction} className="main-container bg-white shadow-md rounded-lg p-6 w-full max-w-md">
         <h1 className="text-2xl font-semibold text-center mb-6">User Form</h1>
 
-        {/* Name Input */}
         <div className="input-group flex flex-col mb-4">
           <label htmlFor="name" className="text-sm font-medium mb-2">
             Name
@@ -25,7 +24,7 @@ function ServerAction (){
           />
         </div>
 
-        {/* Address Input */}
+  
         <div className="input-group flex flex-col mb-4">
           <label htmlFor="add" className="text-sm font-medium mb-2">
             Address
@@ -40,7 +39,6 @@ function ServerAction (){
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
           className="w-full py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition duration-300"
