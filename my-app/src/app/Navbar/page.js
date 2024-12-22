@@ -3,6 +3,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import log from "../logo-main.png";
 import { CiLocationOn } from "react-icons/ci";
 import { IoIosSearch } from "react-icons/io";
+import indiaFlag from "../dubai.png";
 import dubai from "../dubai.png";
 
 export default function Navbar() {
@@ -17,11 +18,12 @@ export default function Navbar() {
         >
           <Image src={log} alt="Company Logo" width={100} height={100} />
         </a>
-        <div className="cursor-pointer">
-          <p>Location</p>
-          <div className="flex font-bold items-center gap-1">
-            <CiLocationOn /> <p>India</p>
-          </div>
+        <div className="cursor-pointer flex items-center">
+          <Image src={indiaFlag} width={20} height={10} alt="India" />
+          <select className="bg-transparent ml-1">
+            <option>India</option>
+            <option>USA</option>
+          </select>
         </div>
 
         <div className="flex h-10">
@@ -38,7 +40,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="bg-transparent p-1 font-bold flex">
+        <div className="bg-transparent p-1 font-bold flex items-center">
           <Image
             src={dubai}
             width={20}
@@ -46,7 +48,7 @@ export default function Navbar() {
             height={10}
             alt="Dubai"
           />
-          <select className="bg-transparent">
+          <select className="bg-transparent ml-1">
             <option>En</option>
             <option>Hindi</option>
           </select>
@@ -100,8 +102,11 @@ export default function Navbar() {
 
         <div className="flex justify-between w-full">
           <div className="flex items-center">
-            <CiLocationOn className="text-lg" />
-            <p className="text-xs ml-1">India</p>
+            <Image src={indiaFlag} width={20} height={10} alt="India" />
+            <select className="bg-transparent text-xs ml-1">
+              <option>India</option>
+              <option>USA</option>
+            </select>
           </div>
           <div className="flex items-center">
             <Image
