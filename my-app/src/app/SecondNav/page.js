@@ -2,13 +2,13 @@
 import React, { useState } from 'react';
 import { IoIosMenu, IoIosClose } from 'react-icons/io';
 
-export default function SecondNavbar() {
+export default function SecondNavbar(toggleMenu) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState(null);
 
-  const toggleMenu = () => {
+ toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    setActiveSubMenu(null); // Close submenu when main menu is toggled
+    setActiveSubMenu(null); 
   };
 
   const openSubMenu = (index) => {
